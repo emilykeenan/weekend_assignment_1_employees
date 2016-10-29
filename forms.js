@@ -1,6 +1,10 @@
 $(document).ready(function() {
     var array = [];
-    var monthlySal = 0;
+
+    var monthlySal = 0; //declaring global monthly salary variable
+
+    var combinedSalary = 0; //declaring combinedSalary variable
+
     $('#employeeinfo').on('submit', function(event) {
       event.preventDefault();
 
@@ -20,27 +24,17 @@ $(document).ready(function() {
       console.log(values);
 
       //creating function for monthly salary output
-      // function monthlySalaryOutput(){
-      //   var salary = 0;
-      //   for (var i = 0; i < values.length; i++) {
-      //     var employee = values[i];
-      //     salary += parseInt(empInfo.salary) / 12;
-      //   }
-      // }
-
       function monthlySalaryOutput(){
-        var combinedSalary = 0;
-        combinedSalary += parseInt(values.salary);
+        combinedSalary = combinedSalary + parseInt(values.salary);
         console.log(combinedSalary);
-        monthlySal = combinedSalary / 12;
+        monthlySal = Math.round(combinedSalary / 12);
         return monthlySal
       }
-
-      //monthlySalaryOutput(); //calling monthlySalaryOutput gave me no real number
 
       // clear out inputs
       $('#employeeinfo').find('input[type=text]').val('');
 
+      //calling monthly salary output function
       monthlySalaryOutput();
 
       // append to DOM
@@ -67,16 +61,8 @@ $(document).ready(function() {
     function fireThem(){
       $(this).parent().remove();
     }
-//applying event
+
+//applying fireThem event function to .fired
     $('#container').on('click', '.fired', fireThem);
 
 });
-
-//creating function for monthly salary output
-// function monthlySalaryOutput(){
-//   var salary = 0;
-//   for (var i = 0; i < values.length; i++) {
-//     var employee = values[i];
-//     salary += parseInt(employee.salary) / 12;
-//   }
-// }
