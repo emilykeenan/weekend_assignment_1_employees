@@ -1,5 +1,6 @@
 $(document).ready(function() {
     var array = [];
+    var monthlySal = 0;
     $('#employeeinfo').on('submit', function(event) {
       event.preventDefault();
 
@@ -27,10 +28,20 @@ $(document).ready(function() {
       //   }
       // }
 
+      function monthlySalaryOutput(){
+        var combinedSalary = 0;
+        combinedSalary += parseInt(values.salary);
+        console.log(combinedSalary);
+        monthlySal = combinedSalary / 12;
+        return monthlySal
+      }
+
       //monthlySalaryOutput(); //calling monthlySalaryOutput gave me no real number
 
       // clear out inputs
       $('#employeeinfo').find('input[type=text]').val('');
+
+      monthlySalaryOutput();
 
       // append to DOM
       appendDom(values);
@@ -48,17 +59,7 @@ $(document).ready(function() {
 
       $el.append('<button class="fired">ur fired</button>'); //adding delete button
 
-      // function monthlySalaryOutput(){
-      //   var combinedSalary = 0;
-      //   combinedSalary += parseInt(empInfo.salary);
-      //   var monthlySalary = combinedSalary / 12;
-      //   return monthlySalary
-      //   }
-      // }
-      //
-      // monthlySalaryOutput(); //calling monthlySalaryOutput
-
-      $('#monthlysalary').text('You pay your employees ' + salary + ' dollars per month.');
+      $('#monthlysalary').text('You pay your employees ' + monthlySal + ' dollars per month.');
 
     }
 
