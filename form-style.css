@@ -5,9 +5,26 @@ body {
 
 h1 {
   color: teal;
-  width: 800px;
-  margin: 30px auto 50px auto;
+  width: 600px;
+  margin: 30px auto -5px auto;
   text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px dotted #999999;
+  padding: 19px;
+}
+
+h1, #employeeinfo, #container {
+    box-shadow: 3px 3px 5px #666666;
+}
+
+#employeeinfo {
+  width: 600px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  background: #999999;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #container {
@@ -28,14 +45,6 @@ h1 {
 
 .clicked {
   border-color: red;
-}
-
-#employeeinfo {
-  width: 600px;
-  margin: 0 auto 0 auto;
-  padding: 20px;
-  background: #999999;
-  border-radius: 10px;
 }
 
 input {
@@ -62,7 +71,7 @@ input {
 }
 
 #showname {
-  font-size: 24px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: -10px;
   text-align: center;
@@ -93,4 +102,12 @@ h2 {
 
 li {
     margin-bottom: 8px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
 }
