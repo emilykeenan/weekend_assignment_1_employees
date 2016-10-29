@@ -12,6 +12,7 @@ h1 {
   border-top-right-radius: 10px;
   border: 1px dotted #999999;
   padding: 19px;
+  background: white;
 }
 
 h1, #employeeinfo, #container {
