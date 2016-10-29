@@ -45,9 +45,8 @@ $(document).ready(function() {
       $('#container').append('<div class="person"></div>');
       var $el = $('#container').children().last();
 
-      $el.append('<ul>' + '<li>' + empInfo.employeefirstname + '</li>' +
-      '<li>' + empInfo.employeelastname + '</li>' +
-      '<li>' + empInfo.idnumber + '</li>' +
+      $el.append('<p id="showname">' + empInfo.employeefirstname + ' ' + empInfo.employeelastname + '</p>' + 
+      '<ul>' + '<li>' + empInfo.idnumber + '</li>' +
       '<li>' + empInfo.jobtitle  + '</li>' +
       '<li>' + empInfo.salary  + '</li>' + '</ul>' );
 
