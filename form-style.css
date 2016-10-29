@@ -31,7 +31,7 @@ h1, #employeeinfo, #container {
 #container {
   padding: 10px;
   margin: 40px auto 0 auto;
-  width: 800px;
+  width: 700px;
   border: #5F9F9F 1px dotted;
   background-color: #C0D9D9;
   border-radius: 10px;
@@ -41,6 +41,8 @@ h1, #employeeinfo, #container {
 .person {
   padding: 10px;
   border-top: #5F9F9F 1px dotted;
+  width: 650px;
+  margin: 0 auto 0 auto;
 
 }
 
@@ -93,7 +95,7 @@ input {
   padding: 5px;
   font-family: 'Fjalla One', sans-serif;
   float: right;
-  margin-top: -80px;
+  margin-top: -70px;
 }
 .fired:hover {
   border: 1px solid #333333;
@@ -112,6 +114,7 @@ h2 {
 
 li {
     margin-bottom: 8px;
+    font-size: 12px;
 }
 
 input:-webkit-autofill,
