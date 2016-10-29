@@ -1,0 +1,35 @@
+h1 {
+  color: teal;
+}
+
+#container {
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 30px;
+}
+
+.person {
+  border: 2px solid black;
+  padding: 2px;
+}
+
+.clicked {
+  border-color: red;
+}
+
+#employeeinfo {
+  width: 625px;
+  margin: 0 auto 0 auto;
+}
+
+input {
+  margin: 15px;
+}
+
+#idnumber {
+  margin-right: 82px;
+}
+
+#jobtitle {
+  margin-right: 82px;
+}
