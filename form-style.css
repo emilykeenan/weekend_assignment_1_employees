@@ -17,6 +17,7 @@ h1 {
   border: #5F9F9F 1px dotted;
   background-color: #C0D9D9;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .person {
@@ -64,6 +65,7 @@ input {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: -10px;
+  text-align: center;
 }
 
 .fired {
@@ -71,6 +73,8 @@ input {
   background-color: #5F9F9F;
   padding: 5px;
   font-family: 'Fjalla One', sans-serif;
+  float: right;
+  margin-top: -80px;
 }
 .fired:hover {
   border: 1px solid #333333;
@@ -80,4 +84,13 @@ input {
 
 #monthlysalary {
   color: #5F9F9F;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+    margin-bottom: 8px;
 }

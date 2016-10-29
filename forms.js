@@ -48,11 +48,11 @@ $(document).ready(function() {
       $el.append('<p id="showname">' + empInfo.employeefirstname + ' ' + empInfo.employeelastname + '</p>' +
       '<ul>' + '<li>' + 'ID Number: ' + empInfo.idnumber + '</li>' +
       '<li>' + 'Job Title: ' +empInfo.jobtitle  + '</li>' +
-      '<li>' + 'Annual Salary: ' + empInfo.salary  + '</li>' + '</ul>' );
+      '<li>' + 'Annual Salary: $' + empInfo.salary  + '</li>' + '</ul>' );
 
       $el.append('<button class="fired">ur fired</button>'); //adding delete button
 
-      $('#monthlysalary').text('You pay your employees ' + monthlySal + ' dollars per month.');
+      $('#monthlysalary').text('You pay your employees $' + monthlySal + ' dollars per month. Maybe they deserve a raise?');
 
     }
 
