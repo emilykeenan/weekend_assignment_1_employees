@@ -45,10 +45,10 @@ $(document).ready(function() {
       $('#container').append('<div class="person"></div>');
       var $el = $('#container').children().last();
 
-      $el.append('<p id="showname">' + empInfo.employeefirstname + ' ' + empInfo.employeelastname + '</p>' + 
-      '<ul>' + '<li>' + empInfo.idnumber + '</li>' +
-      '<li>' + empInfo.jobtitle  + '</li>' +
-      '<li>' + empInfo.salary  + '</li>' + '</ul>' );
+      $el.append('<p id="showname">' + empInfo.employeefirstname + ' ' + empInfo.employeelastname + '</p>' +
+      '<ul>' + '<li>' + 'ID Number: ' + empInfo.idnumber + '</li>' +
+      '<li>' + 'Job Title: ' +empInfo.jobtitle  + '</li>' +
+      '<li>' + 'Annual Salary: ' + empInfo.salary  + '</li>' + '</ul>' );
 
       $el.append('<button class="fired">ur fired</button>'); //adding delete button
 
